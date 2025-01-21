@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlantCompanion.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackLayout Padding="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Grid.Row="0">
+            <Label x:Name="ResultLabel" Text="" />
+        </StackLayout>
+
+        <Grid Grid.Row="1" BackgroundColor="Green" Padding="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Column="0" Source="" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Button Grid.Column="1" Text="+" FontSize="40" HorizontalOptions="Center" VerticalOptions="Center"
+                    Clicked="OnTakePhotoButtonClicked"
+                    BackgroundColor="Gray"
+                    TextColor="White"
+                    WidthRequest="70"
+                    HeightRequest="70"
+                    CornerRadius="35"/>
+        </Grid>
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LAPTOP1\\Desktop\\PlantCompanion_BACKUP01\\PlantCompanion\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{94168A76-CD50-4105-AA71-CD4A84A16E74}|PlantCompanion\\PlantCompanion.csproj|c:\\users\\laptop1\\desktop\\plantcompanion_backup01\\plantcompanion\\plantcompanion\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{94168A76-CD50-4105-AA71-CD4A84A16E74}|PlantCompanion\\PlantCompanion.csproj|solutionrelative:plantcompanion\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94168A76-CD50-4105-AA71-CD4A84A16E74}|PlantCompanion\\PlantCompanion.csproj|c:\\users\\laptop1\\desktop\\plantcompanion_backup01\\plantcompanion\\plantcompanion\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94168A76-CD50-4105-AA71-CD4A84A16E74}|PlantCompanion\\PlantCompanion.csproj|solutionrelative:plantcompanion\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94168A76-CD50-4105-AA71-CD4A84A16E74}|PlantCompanion\\PlantCompanion.csproj|c:\\users\\laptop1\\desktop\\plantcompanion_backup01\\plantcompanion\\plantcompanion\\plantcompanion.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{94168A76-CD50-4105-AA71-CD4A84A16E74}|PlantCompanion\\PlantCompanion.csproj|solutionrelative:plantcompanion\\plantcompanion.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP1\\Desktop\\PlantCompanion_BACKUP01\\PlantCompanion\\PlantCompanion\\App.xaml.cs",
+              "RelativeDocumentMoniker": "PlantCompanion\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\LAPTOP1\\Desktop\\PlantCompanion_BACKUP01\\PlantCompanion\\PlantCompanion\\App.xaml.cs",
+              "RelativeToolTip": "PlantCompanion\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T18:42:47.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\LAPTOP1\\Desktop\\PlantCompanion_BACKUP01\\PlantCompanion\\PlantCompanion\\MainPage.xaml",
+              "RelativeDocumentMoniker": "PlantCompanion\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\LAPTOP1\\Desktop\\PlantCompanion_BACKUP01\\PlantCompanion\\PlantCompanion\\MainPage.xaml",
+              "RelativeToolTip": "PlantCompanion\\MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-12T10:52:31.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlantCompanion.csproj",
+              "DocumentMoniker": "C:\\Users\\LAPTOP1\\Desktop\\PlantCompanion_BACKUP01\\PlantCompanion\\PlantCompanion\\PlantCompanion.csproj",
+              "RelativeDocumentMoniker": "PlantCompanion\\PlantCompanion.csproj",
+              "ToolTip": "C:\\Users\\LAPTOP1\\Desktop\\PlantCompanion_BACKUP01\\PlantCompanion\\PlantCompanion\\PlantCompanion.csproj",
+              "RelativeToolTip": "PlantCompanion\\PlantCompanion.csproj",
+              "ViewState": "AgIAADMAAAAAAAAAAAAgwEEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-26T19:46:13.113Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
