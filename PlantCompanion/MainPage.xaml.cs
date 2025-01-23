@@ -3,12 +3,11 @@ using Microsoft.Maui.Media;
 using System;
 using System.IO;
 using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using System.Linq;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace PlantCompanion
 {
@@ -25,6 +24,10 @@ namespace PlantCompanion
             if (photo != null)
             {
                 var stream = await photo.OpenReadAsync();
+
+                // Exibir a foto na interface dentro do quadrado
+                PlantImage.Source = ImageSource.FromStream(() => stream);
+
                 await IdentifyPlant(stream);
             }
         }
@@ -44,9 +47,9 @@ namespace PlantCompanion
                 var jsonContent = new
                 {
                     images = new[] { $"data:image/jpg;base64,{base64Image}" },
-                    latitude = 49.207,
-                    longitude = 16.608,
-                    similar_images = true
+                    latitude = 49.207, // Use latitude from device if necessary
+                    longitude = 16.608, // Use longitude from device if necessary
+                    similar_images = true // Enable similar images for better results
                 };
 
                 var content = new StringContent(JsonSerializer.Serialize(jsonContent), System.Text.Encoding.UTF8, "application/json");
@@ -55,28 +58,26 @@ namespace PlantCompanion
                 var response = await client.SendAsync(request);
                 var result = await response.Content.ReadAsStringAsync();
 
-                // Log messages
-                var logMessages = new List<string>
-                {
-                    "Resposta da API:",
-                    result,
-                    "++++++++++++++++++++++++"
-                };
-
                 if (response.IsSuccessStatusCode)
                 {
                     try
                     {
                         var plantInfo = JsonSerializer.Deserialize<PlantInfo>(result);
-                        logMessages.Add("PlantInfo desserializado:");
-                        logMessages.Add(JsonSerializer.Serialize(plantInfo));
 
                         if (plantInfo?.Suggestions != null && plantInfo.IsPlant)
                         {
+                            // Get plant name and probability of being healthy
                             var plantName = plantInfo.Suggestions.FirstOrDefault()?.PlantName ?? "Desconhecido";
                             var healthStatus = plantInfo.IsPlant ? "Saudável" : "Doente";
-                            logMessages.Add($"Nome da Planta: {plantName}, Saúde: {healthStatus}");
-                            ResultLabel.Text = $"Nome: {plantName}, Saúde: {healthStatus}";
+                            var plantProbability = plantInfo.IsPlantProbability;
+
+                            // Check if the plant is likely to be healthy or not based on the probability
+                            if (plantProbability < 0.6) // Adjust the threshold as necessary
+                            {
+                                healthStatus = "Provavelmente Doente";
+                            }
+
+                            ResultLabel.Text = $"Nome: {plantName}, Saúde: {healthStatus} (Probabilidade: {plantProbability * 100}%)";
                         }
                         else
                         {
@@ -85,18 +86,13 @@ namespace PlantCompanion
                     }
                     catch (JsonException ex)
                     {
-                        logMessages.Add($"Erro ao desserializar JSON: {ex.Message}");
                         await DisplayAlert("Erro", $"Erro ao desserializar JSON: {ex.Message}", "OK");
                     }
                 }
                 else
                 {
-                    logMessages.Add($"Erro na solicitação: {response.StatusCode}");
                     await DisplayAlert("Erro", $"Erro na solicitação: {response.StatusCode}", "OK");
                 }
-
-                // Exibir todos os logs em um DisplayAlert
-                await DisplayAlert("Logs", string.Join("\n", logMessages), "OK");
             }
         }
 

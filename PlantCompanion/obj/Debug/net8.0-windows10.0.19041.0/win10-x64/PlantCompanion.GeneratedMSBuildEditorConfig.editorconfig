@@ -8,7 +8,7 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PlantCompanion
-build_property.ProjectDir = C:\Users\LAPTOP1\Desktop\PlantCompanion_BACKUP01\PlantCompanion\PlantCompanion\
+build_property.ProjectDir = C:\Users\LEGION\Desktop\Tests\PlantCompanion\PlantCompanion\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTAotOptimizerEnabled = true
@@ -18,35 +18,32 @@ build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptOut =
 build_property.CsWinRTCcwLookupTableGeneratorEnabled = true
 build_property.CsWinRTMergeReferencedActivationFactories = 
 build_property.CsWinRTAotWarningLevel = 
-build_property.CsWinRTUseWindowsUIXamlProjections = false
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/LAPTOP1/Desktop/PlantCompanion_BACKUP01/PlantCompanion/PlantCompanion/App.xaml]
+[C:/Users/LEGION/Desktop/Tests/PlantCompanion/PlantCompanion/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PlantCompanion.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/LAPTOP1/Desktop/PlantCompanion_BACKUP01/PlantCompanion/PlantCompanion/AppShell.xaml]
+[C:/Users/LEGION/Desktop/Tests/PlantCompanion/PlantCompanion/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PlantCompanion.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/LAPTOP1/Desktop/PlantCompanion_BACKUP01/PlantCompanion/PlantCompanion/MainPage.xaml]
+[C:/Users/LEGION/Desktop/Tests/PlantCompanion/PlantCompanion/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PlantCompanion.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/LAPTOP1/Desktop/PlantCompanion_BACKUP01/PlantCompanion/PlantCompanion/Resources/Styles/Colors.xaml]
+[C:/Users/LEGION/Desktop/Tests/PlantCompanion/PlantCompanion/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PlantCompanion.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/LAPTOP1/Desktop/PlantCompanion_BACKUP01/PlantCompanion/PlantCompanion/Resources/Styles/Styles.xaml]
+[C:/Users/LEGION/Desktop/Tests/PlantCompanion/PlantCompanion/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PlantCompanion.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
