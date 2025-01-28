@@ -1,0 +1,1 @@
+C:\Users\tomas\Documents\Projeto\PlantCompanion\PlantCompanion\PlantCompanion.csproj;x64
