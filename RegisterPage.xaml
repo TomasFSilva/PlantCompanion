@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlantCompanion.RegisterPage"
+             Title="Register"
+             Shell.NavBarIsVisible="True"
+             BackgroundColor="#F5F5DC">
+
+    <StackLayout VerticalOptions="StartAndExpand">
+
+        <Image Source="logotipo.png"
+               WidthRequest="250"
+               HeightRequest="180"
+               Margin="0,50,0,50" />
+
+        <HorizontalStackLayout HeightRequest="50"
+                               BackgroundColor="#DBD3C6"
+                               Margin="40,0,40,20">
+
+            <Frame BackgroundColor="Transparent"
+                   BorderColor="Transparent"
+                   WidthRequest="50"
+                   HeightRequest="50"
+                   Padding="10">
+                <Image Source="icon_user.png"/>
+            </Frame>
+
+            <Entry x:Name="NameEntry"
+                   Placeholder="Name"
+                   PlaceholderColor="#4A7023"
+                   BackgroundColor="Transparent"
+                   TextColor="#4A7023"
+                   TextChanged="OnEntryTextChanged"/>
+
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HeightRequest="50"
+                               BackgroundColor="#DBD3C6"
+                               Margin="40,0,40,20">
+
+            <Frame BackgroundColor="Transparent"
+                   BorderColor="Transparent"
+                   WidthRequest="50"
+                   HeightRequest="50"
+                   Padding="10">
+                <Image Source="icon_email.png"/>
+            </Frame>
+
+            <Entry x:Name="EmailEntry"
+                   Placeholder="Email"
+                   PlaceholderColor="#4A7023"
+                   BackgroundColor="Transparent"
+                   TextColor="#4A7023"
+                   TextChanged="OnEntryTextChanged"/>
+
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HeightRequest="50"
+                               BackgroundColor="#DBD3C6"
+                               Margin="40,0,40,20">
+
+            <Frame BackgroundColor="Transparent"
+                   BorderColor="Transparent"
+                   WidthRequest="50"
+                   HeightRequest="50"
+                   Padding="10">
+                <Image Source="icon_password.png"/>
+            </Frame>
+
+            <Entry x:Name="PasswordEntry"
+                   Placeholder="Password"
+                   PlaceholderColor="#4A7023"
+                   IsPassword="True"
+                   BackgroundColor="Transparent"
+                   TextColor="#4A7023"
+                   TextChanged="OnEntryTextChanged"/>
+
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HeightRequest="50"
+                               BackgroundColor="#DBD3C6"
+                               Margin="40,0,40,20">
+
+            <Frame BackgroundColor="Transparent"
+                   BorderColor="Transparent"
+                   WidthRequest="50"
+                   HeightRequest="50"
+                   Padding="10">
+                <Image Source="icon_password.png"/>
+            </Frame>
+
+            <Entry x:Name="ConfirmPasswordEntry"
+                   Placeholder="Confirm Password"
+                   PlaceholderColor="#4A7023"
+                   IsPassword="True"
+                   BackgroundColor="Transparent"
+                   TextColor="#4A7023"
+                   TextChanged="OnEntryTextChanged"/>
+
+        </HorizontalStackLayout>
+
+        <Label x:Name="WarningLabel"
+               TextColor="Red"
+               IsVisible="False"
+               HorizontalOptions="Center"
+               Margin="20,0,20,20"/>
+
+        <Button Text="Register"
+                BackgroundColor="#4A7023"
+                TextColor="White"
+                CornerRadius="20"
+                Margin="20,40,40,20"
+                FontAttributes="Bold"
+                Clicked="OnRegisterButtonClicked"/>
+
+    </StackLayout>
+
+</ContentPage>
